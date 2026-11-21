@@ -11,4 +11,13 @@ spec:
   template:
     metadata:
       name: nginx-pod
+      label:
+        app: nginx
+    spec:
+      containers:
+      - name: c1
+        image: nginx:latest
+        ports:
+          containerPort: 80
+      
       
