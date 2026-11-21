@@ -10,5 +10,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80 #This port is used to connect outer world 
-      targetPort: 80 #This port is used when traffic comes to container
+      targetPort: 80 #This port is used where traffic comes to container from outer world
   type: ClusterIP
