@@ -11,4 +11,9 @@ spec:
   - name: clusterip-port
     port: 80
     targetPort: 80
+
+
+#If we use cluster IP then connection is internal and we will not able to access the service from internet 
+# to accces the services from internet we need to expose the port using port-forward
+# kubectl port-forward --address 0.0.0.0 svc/nginx-clusterip 8080:80
    
