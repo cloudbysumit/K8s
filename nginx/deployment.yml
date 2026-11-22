@@ -11,7 +11,7 @@ spec:
   template:
     metadata:
       name: nginx-pod
-      label:
+      labels:
         app: nginx
     spec:
       containers:
@@ -19,5 +19,5 @@ spec:
         image: nginx:latest
         ports:
         - containerPort: 80
-      
+~                           
       
