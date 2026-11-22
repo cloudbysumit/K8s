@@ -7,7 +7,8 @@ spec:
   selector:
     app: nginx
   ports:
-    - protocol: TCP
+    - name: nodeport-80
       port: 80 #This port is used to connect outer world 
-      targetPort: 80 #This port is used where traffic comes to container from outer world
-  type: ClusterIP
+      targetPort: 80
+      nodePort: 30080 #This port is used where traffic comes to container from outer world
+  type: NodePort
